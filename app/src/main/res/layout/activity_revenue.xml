@@ -5,82 +5,92 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
     tools:context="com.xdee.jpmart.ui.analytics.Revenue">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1">
+    <include layout="@layout/include_toolbar" />
 
-        <TableRow
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:minHeight="48dp">
+            android:stretchColumns="1">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|end"
-                android:gravity="end|center_vertical"
-                android:paddingEnd="12dp"
-                android:text="Từ ngày:" />
-
-            <EditText
-                android:id="@+id/edtFromDate"
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:inputType="date"
-                android:minHeight="48dp"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp" />
-        </TableRow>
+                android:minHeight="48dp">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:gravity="center_vertical"
-            android:minHeight="48dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="12dp"
+                    android:text="Từ ngày:" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|end"
-                android:gravity="end|center_vertical"
-                android:paddingEnd="12dp"
-                android:text="Đến ngày:" />
+                <EditText
+                    android:id="@+id/edtFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+            </TableRow>
 
-            <EditText
-                android:id="@+id/edtToDate"
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:gravity="center_vertical"
-                android:inputType="date"
-                android:minHeight="48dp"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp" />
-        </TableRow>
-    </TableLayout>
+                android:minHeight="48dp">
 
-    <Button
-        android:id="@+id/btnRevenueStats"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/blue_ocean"
-        android:minHeight="48dp"
-        android:text="Thống kê doanh thu"
-        android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="12dp"
+                    android:text="Đến ngày:" />
 
-    <TextView
-        android:id="@+id/tvRevenue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:textSize="18sp"
-        tools:text="Doanh thu: 0 đ" />
+                <EditText
+                    android:id="@+id/edtToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnRevenueStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue_ocean"
+            android:minHeight="48dp"
+            android:text="Thống kê doanh thu"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvRevenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            tools:text="Doanh thu: 0 đ" />
+
+    </LinearLayout>
 
 </LinearLayout>

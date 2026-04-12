@@ -1,62 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.xdee.jpmart.ui.user.ChangePassword">
-
-    <include layout="@layout/include_toolbar" />
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="16dp">
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/tvDialogTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="Đổi mật khẩu"
-            android:textSize="22sp"
+            android:layout_marginBottom="12dp"
+            android:text="Thêm khách hàng"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/edtOldPassword"
+            android:id="@+id/edtMaKhach"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="password"
-            android:hint="Mật khẩu cũ"
-            android:inputType="textPassword"
+            android:hint="Mã khách hàng"
+            android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
         <EditText
-            android:id="@+id/edtNewPassword"
+            android:id="@+id/edtHoTen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:autofillHints="newPassword"
-            android:hint="Mật khẩu mới"
-            android:inputType="textPassword"
+            android:hint="Họ tên"
+            android:inputType="textPersonName"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
         <EditText
-            android:id="@+id/edtConfirmNewPassword"
+            android:id="@+id/edtSdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:autofillHints="newPassword"
-            android:hint="Nhập lại mật khẩu mới"
-            android:inputType="textPassword"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <EditText
+            android:id="@+id/edtDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Địa chỉ"
+            android:inputType="textPostalAddress"
             android:minHeight="48dp"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
@@ -91,7 +102,5 @@
                 android:textColor="@color/white" />
 
         </LinearLayout>
-
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>
