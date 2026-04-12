@@ -11,33 +11,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JPMart">
+
+        <!-- UI: analytics -->
         <activity
-            android:name=".BillDetail"
+            android:name=".ui.analytics.TopCustomer"
             android:exported="false" />
         <activity
-            android:name=".Bill"
+            android:name=".ui.analytics.BestSeller"
             android:exported="false" />
         <activity
-            android:name=".Customer"
+            android:name=".ui.analytics.Revenue"
+            android:exported="false" />
+
+        <!-- UI: managing -->
+        <activity
+            android:name=".ui.managing.BillDetail"
             android:exported="false" />
         <activity
-            android:name=".Employee"
+            android:name=".ui.managing.Bill"
             android:exported="false" />
+        <activity
+            android:name=".ui.managing.Customer"
+            android:exported="false" />
+        <activity
+            android:name=".ui.managing.Employee"
+            android:exported="false" />
+        <activity
+            android:name=".ui.managing.Product"
+            android:exported="false" />
+        <activity
+            android:name=".ui.managing.Category"
+            android:exported="false" />
+
         <activity
             android:name=".Cart"
             android:exported="false" />
         <activity
-            android:name=".Product"
-            android:exported="false" />
-        <activity
-            android:name=".Category"
-            android:exported="false" />
-        <activity
             android:name=".MainMenu"
             android:exported="false" />
+
+        <!-- UI: user -->
         <activity
-            android:name=".ChangePassword"
+            android:name=".ui.user.ChangePassword"
             android:exported="false" />
+
         <activity
             android:name=".Login"
             android:exported="false" />

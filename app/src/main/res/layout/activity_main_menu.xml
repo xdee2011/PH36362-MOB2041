@@ -23,18 +23,18 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!-- Thống kê -->
+        <!-- UI: Analytics -->
         <TextView
-            android:id="@+id/tvSectionStats"
+            android:id="@+id/tvSectionAnalytics"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Thống kê"
+            android:text="Analytics"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <GridLayout
-            android:id="@+id/gridStats"
+            android:id="@+id/gridAnalytics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -79,18 +79,18 @@
 
         </GridLayout>
 
-        <!-- Quản lý -->
+        <!-- UI: Managing -->
         <TextView
-            android:id="@+id/tvSectionManage"
+            android:id="@+id/tvSectionManaging"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Quản lý"
+            android:text="Managing"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <GridLayout
-            android:id="@+id/gridManage"
+            android:id="@+id/gridManaging"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -157,13 +157,13 @@
 
         </GridLayout>
 
-        <!-- Người dùng -->
+        <!-- UI: User -->
         <TextView
             android:id="@+id/tvSectionUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Người dùng"
+            android:text="User"
             android:textSize="18sp"
             android:textStyle="bold" />
 

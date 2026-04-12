@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".Bill">
+    tools:context="com.xdee.jpmart.ui.managing.Bill">
 
     <TextView
         android:id="@+id/tvTitle"
